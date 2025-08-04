@@ -17,17 +17,19 @@
     </div>
     <div class="ather Donate">
       <img src="assets/coin.png" alt="Coin" />
-      <p >5500</p>
+      <p id="your-balance">5500</p>
       <p>BDT</p>
     </div>
   </header>
 
   <!-- Buttons -->
   <div class="btn-section">
-    <button class="btn">Donation</button>
-    <button class="btn">History</button>
+    <button id="show-donation-form" class="btn">Donation</button>
+    <div>
+      <button id="show-history-form" class="btn">History</button>
+    </div>
   </div>
-  <main class="main-section">
+  <main id="main-section">
 
     <!-- Card Section -->
     <div class="card-section">
@@ -92,9 +94,14 @@
       </div>
     </div>
   </main>
-
+  <div id="history-section" class="hidden">
+    <h1>History</h1>
+    <div class="history-container" ></div>
+  </div>
   <script src="js/addMony.js"></script>
   <script src="js/another.js"></script>
+  <script src="js/cash-money.js"></script>
+  <script src="js/faetures.js"></script>
   <script src="js/utilities.js"></script>
 </body>
 </html>

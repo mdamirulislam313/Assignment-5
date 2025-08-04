@@ -26,7 +26,9 @@ document.getElementById('donate-button-2')
             document.getElementById('Amount-content-2').innerText = newBalance;
             document.getElementById('input-box-2').value = '';
     alert("✅ Donation Confirmed! Thank you ❤️");
-        
+      const p = document.createElement('p');
+    p.innerText = `Added: ${addMoney} Tk. Balance: ${newBalance}`;
+    document.getElementById('History-container').appendChild(p);  
     }
     else{
         alert('no donation! please add your money')
@@ -47,7 +49,5 @@ document.getElementById('donate-button-3')
         
     }
     else{
-        alert('no donation! please add your money')
-    }
-    
+        alert('no donation! please add your money')}
 })
